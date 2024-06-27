@@ -1,0 +1,13 @@
+<div>
+  <app-search></app-search>
+
+  <ng-container *ngFor="let user of users">
+    <div class="card my-2" [routerLink]="['/' ,'detail', user.login]">
+      <div class="card-body">
+        <span >User with id: {{user.id}}</span>
+      </div>
+    </div>
+  </ng-container>
+
+</div>
+

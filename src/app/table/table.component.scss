@@ -1,0 +1,8 @@
+.table {
+  tr {
+    &:hover {
+      background-color: rgba(248, 249, 250, 0.55);
+      cursor: pointer;
+    }
+  }
+}

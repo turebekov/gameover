@@ -1,0 +1,10 @@
+<ng-container *ngIf="user">
+  <div class="card" style="width: 18rem;">
+    <img class="card-img-top" width="286" height="286" [src]="user?.avatarUrl" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">{{user.login | uppercase}}</h5>
+      <p class="card-text">Type: <span>{{user.type}}</span></p>
+      <p class="card-text">Link: <a class="ml-1" target="_blank" [href]="user.url">profile</a></p>
+    </div>
+  </div>
+</ng-container>

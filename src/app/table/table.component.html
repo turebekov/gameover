@@ -1,0 +1,21 @@
+<div>
+  <app-search></app-search>
+</div>
+<ng-container *ngIf="users?.length">
+  <table class="table table-striped mt-3">
+    <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Username</th>
+    </tr>
+    </thead>
+    <tbody>
+    <ng-container *ngFor="let user of users; index as i">
+      <tr [routerLink]="['/' ,'detail', user.login]">
+        <th scope="row">{{i + 1}}</th>
+        <td>{{user.login}}</td>
+      </tr>
+    </ng-container>
+    </tbody>
+  </table>
+</ng-container>
